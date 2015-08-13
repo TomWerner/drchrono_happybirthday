@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Birthdays</title>
+</head>
+<body>
+    {% if todays_birthday_list %}
+    <ul>
+    {% for birthday in todays_birthday_list %}
+        <li>{{ birthday.name }}</li>
+    {% endfor %}
+    </ul>
+    {% else %}
+        <p>No patients have a birthday today.</p>
+    {% endif %}
+</body>
+</html>
