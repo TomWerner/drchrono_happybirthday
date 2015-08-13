@@ -3,6 +3,12 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Birthdays</title>
+
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'happybirthday/css/bootstrap.min.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'happybirthday/css/bootstrap-theme.min.css' %}"/>
+    <script src="{% static 'happybirthday/js/jquery-1.11.3.min.js' %}"></script>
+    <script src="{% static 'happybirthday/js/bootstrap.min.js' %}"></script>
 </head>
 <body>
     {% if todays_birthday_list %}
